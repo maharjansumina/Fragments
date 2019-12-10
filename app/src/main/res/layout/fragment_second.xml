@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:background="@color/colorPrimary"
+    tools:context=".fragments.SecondFragment">
 
-    <Button
-        android:id="@+id/btnFragment"
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Load first fragment"
-        android:layout_margin="20dp"
-        android:textSize="20dp"/>
+        android:hint="Enter Radius"
+        android:textSize="20dp"
+        android:id="@+id/etRadius"/>
 
-    <LinearLayout
-        android:id="@+id/fragmentContainer"
+    <Button
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:orientation="vertical"/>
+        android:layout_height="wrap_content"
+        android:text="Area of Circle"
+        android:textSize="20dp"
+        android:id="@+id/btnCircle"/>
 
 </LinearLayout>
